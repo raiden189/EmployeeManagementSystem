@@ -1,0 +1,45 @@
+﻿@model Employee
+
+<form method="post" asp-action="Update">
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="@Model.Name" class="form-label">Name</label>
+            </div>
+            <div class="col-sm-9">
+                <input asp-for="@Model.Name" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="@Model.Position" class="form-label">Position</label>
+            </div>
+            <div class="col-sm-9">
+                <input asp-for="@Model.Position" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="@Model.Department" class="form-label">Department</label>
+            </div>
+            <div class="col-sm-9">
+                <input asp-for="@Model.Department" type="text" class="form-control" id="@Model.Department">
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="@Model.Salary" class="form-label">Salary</label>
+            </div>
+            <div class="col-sm-9">
+                <input asp-for="@Model.Salary" type="number" class="form-control" id="@Model.Salary">
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

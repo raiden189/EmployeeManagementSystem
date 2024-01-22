@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "CUD Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add, Update or Delete Employee</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                @await Html.PartialAsync("~/Views/Shared/Partial/SearchById.cshtml")
+            </div>
+            <div class="col mt-3"></div>
+            <div class="col mt-3"></div>
+        </div>
+        <div class="row">
+            <div class="col mt-3">
+                @await Html.PartialAsync("~/Views/Shared/Partial/AddView.cshtml")
+            </div>
+            <div class="col mt-3">
+                @await Html.PartialAsync("~/Views/Shared/Partial/UpdateView.cshtml")
+            </div>
+            <div class="col mt-3">
+                @await Html.PartialAsync("~/Views/Shared/Partial/DeleteView.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
